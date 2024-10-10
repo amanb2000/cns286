@@ -19,18 +19,18 @@ The topics in this course can be roughly broken down into two halves: conceptual
  	 - Review: Probability distributions, conditional distributions and likelihood. 
 	 - Statistical inference.
 	 - Shannon N-gram models. 
-	 - Parameter estimation (ML, MAP).
 	 - Chain rule of probability for sequential prediction. 
-	 - Log-likelihood loss function for sequences. 
+		 - Log-likelihood loss function for sequence prediction. 
+	 - Estimation (ML, MAP).
 	 - _Bonus: Markov models, hidden Markov models_
 	 - **Project 1**: Build a dictionary-based N-gram++ character language model. 
- 2. **Computational Predictive Models and Learning**:
+ 2. **Learning Predictive Models**: [Chapter 2 Notes](ch02.html)
  	 - Parameter estimation $\sim$ optimization $\sim$ learning $\sim$ function approximation. 
 	 - Linear regression as a model learning system. 
 	 - Loss functions, gradient descent. 
 	 - Neural networks and the chain rule of calculus (backpropagation).
 	 - The miracle of deep learning and the bitter lesson. 
-	 - **Project 2**: Linear and MLP N-gram models in PyTorch. 
+	 - **Project 2**: Linear regression and MLP in Pyorch, apply models to N-gram text prediction. 
  3. **Sequence Prediction with Recurrent Neural Networks**: 
  	 - Markov processes as canonical sequential statistical processes. 
  	 - Challenge of sequential prediction with neural networks. 
