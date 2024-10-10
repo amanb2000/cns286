@@ -11,8 +11,15 @@ for file in ~/cns286/md/*.md; do
     pandoc -s "$file" \
     -o "html/$filename.html" \
     --mathjax \
-	 --toc-depth=2 \
+	--mathml \
     --standalone \
     --css ~/cns286/style.css \
+	--metadata link_prefix="http://lancelot.languagegame.io/cns286/" \
+    --metadata image_prefix="http://lancelot.languagegame.io/cns286/" \
 	--metadata title=""
 done
+
+if [ "$1" == "publish" ]; then 
+	cp -r /home/odysseus/cns286/figs/ /home/odysseus/html/
+	cp /home/odysseus/cns286/html/* /mnt/arc/cns286/
+fi
