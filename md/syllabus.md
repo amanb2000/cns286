@@ -2,13 +2,13 @@
 
 Home: [Course Index](https://lancelot.languagegame.io/cns286/index.html)
 
-_Aman Bhargava, Thomson Lab, Caltech_
+_[Aman Bhargava](https://aman-bhargava.com/), Thomson Lab, Caltech_
 
  - **Meetings**: Thursdays 5:30-7pm.
  - **Units**: 6 hours per week.
  - **Grading**: Projects with code review and discussion. 
 
-## Lectures + Slides
+## Lectures, Slides, and Notes
 
 The topics in this course can be roughly broken down into two halves: conceptual and practical. 
 

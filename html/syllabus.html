@@ -18,17 +18,17 @@
 <body>
 <h1 id="cns286-syllabus-fall-2024">CNS286 Syllabus Fall 2024</h1>
 <p>Home: <a href="https://lancelot.languagegame.io/cns286/index.html">Course Index</a></p>
-<p><em>Aman Bhargava, Thomson Lab, Caltech</em></p>
+<p><em><a href="https://aman-bhargava.com/">Aman Bhargava</a>, Thomson Lab, Caltech</em></p>
 <ul>
 <li><strong>Meetings</strong>: Thursdays 5:30-7pm.</li>
 <li><strong>Units</strong>: 6 hours per week.</li>
 <li><strong>Grading</strong>: Projects with code review and discussion.</li>
 </ul>
-<h2 id="lectures-slides">Lectures + Slides</h2>
+<h2 id="lectures-slides-and-notes">Lectures, Slides, and Notes</h2>
 <p>The topics in this course can be roughly broken down into two halves: conceptual and practical.</p>
 <h3 id="conceptual-topics">Conceptual Topics</h3>
 <ol type="1">
-<li><strong>Mathematics of Prediction</strong>: <a href="ch01.html">Chapter 1 Slides</a>
+<li><strong>Mathematics of Prediction</strong>: <a href="ch01.html">Chapter 1 Notes</a>
 <ul>
 <li>Review: Probability distributions, conditional distributions and likelihood.</li>
 <li>Statistical inference.</li>
@@ -63,35 +63,29 @@
 <li>Transformer blocks as multi-head self-attention + nonlinearities.</li>
 <li>Masked language modelling with transformers (BERT).</li>
 <li>Causal auto-regressive language modelling with transformers (GPT).</li>
+<li><strong>Project 4</strong>: Follow along with Andrej Karpathy’s <a href="https://youtu.be/kCc8FmEb1nY?si=k4UW-QmI4bM5r3ky">GPT tutorial</a>.</li>
 </ul></li>
 </ol>
 <h3 id="practical-topics">Practical Topics</h3>
 <ol start="5" type="1">
-<li><strong>Build a Generative Pre-Trained Transformer from Scratch</strong>:
-<ul>
-<li><strong>Project 4</strong>: Follow along with Andrej Karpathy’s <a href="https://youtu.be/kCc8FmEb1nY?si=k4UW-QmI4bM5r3ky">GPT tutorial</a>.</li>
-</ul></li>
-<li><strong>Train GPT-2 HuggingFace Template Model</strong>:
-<ul>
-<li><strong>Project 5</strong>: Recapitulate your results from the transformer you build from scratch with your own <a href="https://github.com/huggingface/transformers/blob/v4.45.2/src/transformers/models/gpt2/modeling_gpt2.py#L1179">newly-trained GPT2LMHeadModel</a>.</li>
-</ul></li>
-<li><strong>Use and Fine-Tune Pre-Trained Transformers</strong>:
-<ul>
-<li><strong>Project 6</strong>: Prompt HuggingFace pre-trained autoregressive transformer LLMs for various tasks, apply low-rank fine-tuning (LoRA) to efficiently modify behavior.</li>
-</ul></li>
+<li><strong>Train GPT-2 HuggingFace Template Model</strong>: Recapitulate your results from the transformer you built from scratch (Project 4) with your own <a href="https://github.com/huggingface/transformers/blob/v4.45.2/src/transformers/models/gpt2/modeling_gpt2.py#L1179">newly-trained GPT2LMHeadModel</a>.</li>
+<li><strong>Use and Fine-Tune Pre-Trained Transformers</strong>: Prompt HuggingFace pre-trained autoregressive transformer LLMs for various tasks, apply low-rank fine-tuning (LoRA) to efficiently modify behavior.</li>
 <li><strong>Learn to use LLM APIs Properly</strong>: HTTP requests, asynchronous scripting for high-throughput tasks, best practices for organizing scripts.
 <ul>
-<li><strong>Project 7</strong>: Build an auto-grader for short-answer text responses to high school science questions.</li>
+<li>Build an auto-grader for short-answer text responses to high school science questions.</li>
 </ul></li>
 <li><strong>Hack and Control Transformers</strong>: Explore token-based and activation based control methods.
 <ul>
 <li>Human and LLM-based prompt engineering.</li>
 <li>1st-order discrete prompt optimization (<a href="https://github.com/amanb2000/Magic_Words">greedy coordinate gradient</a>).</li>
 <li>Soft prompting (1st-order continuous prompt optimization).</li>
-<li>Try perturbing activations by modifying the <a href="https://github.com/huggingface/transformers/blob/69b5ccb8878b58372ea326d17d9490d67ccf23a7/src/transformers/models/gpt2/modeling_gpt2.py#L725">past key and value representations</a>.</li>
+<li>Try perturbing attention values or token representations by modifying the <a href="https://github.com/huggingface/transformers/blob/69b5ccb8878b58372ea326d17d9490d67ccf23a7/src/transformers/models/gpt2/modeling_gpt2.py#L725">past key and value representations</a>.</li>
 </ul></li>
-<li><strong>Analyze LLM Representations</strong>: Visualize activations, apply linear probes to analyze informational content of representations, analyze geometry and structure in representations (<a href="https://colab.research.google.com/drive/1NQseiwja2wTP4dpN4i8g1LxRo4_af3i4?usp=sharing">starter code</a>).
+<li><strong>Analyze LLM Representations</strong>:
 <ul>
+<li>Visualize full- and dimensionality-reduced transformer activations (<a href="https://colab.research.google.com/drive/1NQseiwja2wTP4dpN4i8g1LxRo4_af3i4?usp=sharing">starter code</a>).</li>
+<li>Apply linear probes to analyze informational content of representations (<a href="https://github.com/amanb2000/Emo_LLM/blob/main/notebooks/GPT2_Adjective_Representation_PCA.ipynb">example code</a>).</li>
+<li>Use linear probes to perturb (“nudge”) activations of LLM (<a href="https://github.com/amanb2000/Emo_LLM/blob/main/notebooks/Nudge_Intrinsic_Geometry.ipynb">starter code</a>).</li>
 <li><a href="https://colab.research.google.com/drive/1DeagoR31QM9qFsMkVMgEuJPst9OwsGv4">Sparse autoencoders for interpretability</a> with Anthropic.</li>
 </ul></li>
 </ol>
