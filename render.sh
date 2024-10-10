@@ -13,13 +13,14 @@ for file in ~/cns286/md/*.md; do
     --mathjax \
 	--mathml \
     --standalone \
-    --css ~/cns286/style.css \
+    --css style.css \
 	--metadata link_prefix="http://lancelot.languagegame.io/cns286/" \
     --metadata image_prefix="http://lancelot.languagegame.io/cns286/" \
 	--metadata title=""
 done
 
 if [ "$1" == "publish" ]; then 
-	cp -r /home/odysseus/cns286/figs/ /home/odysseus/html/
+	cp -r /home/odysseus/cns286/figs/ /mnt/arc/cns286
+	cp /home/odysseus/cns286/style.css /mnt/arc/cns286/
 	cp /home/odysseus/cns286/html/* /mnt/arc/cns286/
 fi
