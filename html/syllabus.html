@@ -14,34 +14,37 @@
     ul.task-list{list-style: none;}
   </style>
   <link rel="stylesheet" href="/home/odysseus/cns286/style.css" />
-  <script src="/usr/share/javascript/mathjax/tex-mml-chtml.js" type="text/javascript"></script>
 </head>
 <body>
 <h1 id="cns286-syllabus-fall-2024">CNS286 Syllabus Fall 2024</h1>
-<p><a href="https://lancelot.languagegame.io/cns286/index.html">Course Index</a></p>
+<p>Home: <a href="https://lancelot.languagegame.io/cns286/index.html">Course Index</a></p>
 <p><em>Aman Bhargava, Thomson Lab, Caltech</em></p>
 <ul>
 <li><strong>Meetings</strong>: Thursdays 5:30-7pm.</li>
 <li><strong>Units</strong>: 6 hours per week.</li>
-<li><strong>Grading</strong>: 3 assignments with code review.</li>
+<li><strong>Grading</strong>: Projects with code review and discussion.</li>
 </ul>
 <h2 id="lectures-slides">Lectures + Slides</h2>
 <ol type="1">
-<li><strong>Mathematics of Prediction</strong>:
+<li><strong>Mathematics of Prediction</strong>: <a href="ch01.html">Chapter 1 Slides</a>
 <ul>
 <li>Review: Probability distributions, conditional distributions and likelihood.</li>
+<li>Statistical inference.</li>
 <li>Shannon N-gram models.</li>
-<li>Parameter estimation (ML, MAP), statistical inference.</li>
-<li>Chain rule of probability for sequential prediction, log-likelihood loss function.</li>
+<li>Parameter estimation (ML, MAP).</li>
+<li>Chain rule of probability for sequential prediction.</li>
+<li>Log-likelihood loss function for sequences.</li>
 <li><em>Bonus: Markov models, hidden Markov models</em></li>
+<li><strong>Project 1</strong>: Build a dictionary-based N-gram++ character language model.</li>
 </ul></li>
 <li><strong>Computational Predictive Models and Learning</strong>:
 <ul>
-<li>Parameter estimation <span class="math inline">\(\sim\)</span> optimization <span class="math inline">\(\sim\)</span> learning <span class="math inline">\(\sim\)</span> function approximation.</li>
+<li>Parameter estimation <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∼</mo><annotation encoding="application/x-tex">\sim</annotation></semantics></math> optimization <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∼</mo><annotation encoding="application/x-tex">\sim</annotation></semantics></math> learning <math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>∼</mo><annotation encoding="application/x-tex">\sim</annotation></semantics></math> function approximation.</li>
 <li>Linear regression as a model learning system.</li>
 <li>Loss functions, gradient descent.</li>
 <li>Neural networks and the chain rule of calculus (backpropagation).</li>
 <li>The miracle of deep learning and the bitter lesson.</li>
+<li><strong>Project 2</strong>: Linear and MLP N-gram models in PyTorch.</li>
 </ul></li>
 <li><strong>Sequence Prediction with Recurrent Neural Networks</strong>:
 <ul>
@@ -50,6 +53,7 @@
 <li>Latent states for sequence prediction.</li>
 <li>Backpropagation through time.</li>
 <li>Problems with backpropagation through time.</li>
+<li><strong>Project 3</strong>: Character-based RNN in PyTorch.</li>
 </ul></li>
 <li><strong>Attention is all you need</strong>:
 <ul>
@@ -58,7 +62,24 @@
 <li>Masked language modelling with transformers (BERT).</li>
 <li>Causal auto-regressive language modelling with transformers (GPT).</li>
 </ul></li>
-<li></li>
+<li><strong>Build a Generative Pre-Trained Transformer from Scratch</strong>:
+<ul>
+<li><strong>Project 4</strong>: Follow along with Andrej Karpathy’s <a href="https://youtu.be/kCc8FmEb1nY?si=k4UW-QmI4bM5r3ky">GPT tutorial</a>.</li>
+</ul></li>
+<li><strong>Train GPT-2 HuggingFace Template Model</strong>:
+<ul>
+<li><strong>Project 5</strong>: Recapitulate your results from the transformer you build from scratch with your own <a href="https://github.com/huggingface/transformers/blob/v4.45.2/src/transformers/models/gpt2/modeling_gpt2.py#L1179">newly-trained GPT2LMHeadModel</a>.</li>
+</ul></li>
+<li><strong>Use and Fine-Tune Pre-Trained Transformers</strong>:
+<ul>
+<li><strong>Project 6</strong>: Prompt HuggingFace pre-trained autoregressive transformer LLMs for various tasks, apply low-rank fine-tuning (LoRA) to efficiently modify behavior.</li>
+</ul></li>
+<li><strong>Learn to use LLM APIs Properly</strong>: HTTP requests, asynchronous scripting for high-throughput tasks, best practices for organizing scripts.
+<ul>
+<li><strong>Project 7</strong>: Build an auto-grader for short-answer text responses to high school science questions.</li>
+</ul></li>
+<li><strong>Hack and Control Transformers</strong>: Explore LLM-based prompt optimization, greedy coordinate gradient adversarial prompt optimization, and soft prompting as LLM control methods (<a href="https://github.com/amanb2000/Magic_Words">example code</a>)</li>
+<li><strong>Analyze LLM Representations</strong>: Visualize activations, apply linear probes to analyze informational content of representations, analyze geometry and structure in representations (<a href="#">starter code</a>).</li>
 </ol>
 </body>
 </html>
