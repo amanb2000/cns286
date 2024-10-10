@@ -2,8 +2,10 @@
 
 Home: [Course Index](https://lancelot.languagegame.io/cns286/index.html)
 
-_[Aman Bhargava](https://aman-bhargava.com/), Thomson Lab, Caltech_
+_[Aman Bhargava](https://aman-bhargava.com/), Fall 2024_
 
+ - **Instructor**: Aman Bhargava
+ - **Supervisor**: Prof. Matt Thomson
  - **Meetings**: Thursdays 5:30-7pm.
  - **Units**: 6 hours per week.
  - **Grading**: Projects with code review and discussion. 
@@ -16,7 +18,7 @@ The topics in this course can be roughly broken down into two halves: conceptual
 ### Conceptual Topics
 
  1. **Mathematics of Prediction**: [Chapter 1 Notes](ch01.html)
- 	 - Review: Probability distributions, conditional distributions and likelihood. 
+ 	 - Probability distributions, conditional distributions, and likelihood. 
 	 - Statistical inference.
 	 - Shannon N-gram models. 
 	 - Chain rule of probability for sequential prediction. 
@@ -31,14 +33,14 @@ The topics in this course can be roughly broken down into two halves: conceptual
 	 - Neural networks and the chain rule of calculus (backpropagation).
 	 - The miracle of deep learning and the bitter lesson. 
 	 - **Project 2**: Linear regression and MLP in Pyorch, apply models to N-gram text prediction. 
- 3. **Sequence Prediction with Recurrent Neural Networks**: [Chapter 3 Notes](ch03.html)
+ 3. **Recurrent Neural Sequence Models**: [Chapter 3 Notes](ch03.html)
  	 - Markov processes as canonical sequential statistical processes. 
  	 - Challenge of sequential prediction with neural networks. 
 	 - Latent states for sequence prediction. 
 	 - Backpropagation through time. 
 	 - Problems with backpropagation through time. 
 	 - **Project 3**: Character-based RNN in PyTorch.
- 4. **Attention is all you need**: [Chapter 4 Notes](ch04.html)
+ 4. **Transformer-Based Sequence Models**: [Chapter 4 Notes](ch04.html), [Chapter 4 Slides](slides/intro_to_llms.pdf)
  	 - Self-attention for sequence modelling. 
 	 - Transformer blocks as multi-head self-attention + nonlinearities. 
 	 - Masked language modelling with transformers (BERT).

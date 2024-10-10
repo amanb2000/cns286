@@ -21,6 +21,7 @@ done
 
 if [ "$1" == "publish" ]; then 
 	cp -r /home/odysseus/cns286/figs/ /mnt/arc/cns286
+	cp -r /home/odysseus/cns286/slides/ /mnt/arc/cns286
 	cp /home/odysseus/cns286/style.css /mnt/arc/cns286/
 	cp /home/odysseus/cns286/html/* /mnt/arc/cns286/
 fi
