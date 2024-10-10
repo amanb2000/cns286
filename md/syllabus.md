@@ -31,14 +31,14 @@ The topics in this course can be roughly broken down into two halves: conceptual
 	 - Neural networks and the chain rule of calculus (backpropagation).
 	 - The miracle of deep learning and the bitter lesson. 
 	 - **Project 2**: Linear regression and MLP in Pyorch, apply models to N-gram text prediction. 
- 3. **Sequence Prediction with Recurrent Neural Networks**: 
+ 3. **Sequence Prediction with Recurrent Neural Networks**: [Chapter 3 Notes](ch03.html)
  	 - Markov processes as canonical sequential statistical processes. 
  	 - Challenge of sequential prediction with neural networks. 
 	 - Latent states for sequence prediction. 
 	 - Backpropagation through time. 
 	 - Problems with backpropagation through time. 
 	 - **Project 3**: Character-based RNN in PyTorch.
- 4. **Attention is all you need**: 
+ 4. **Attention is all you need**: [Chapter 4 Notes](ch04.html)
  	 - Self-attention for sequence modelling. 
 	 - Transformer blocks as multi-head self-attention + nonlinearities. 
 	 - Masked language modelling with transformers (BERT).
