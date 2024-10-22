@@ -28,23 +28,69 @@
 Predictive Models</h1>
 <p>Home: <a href="index.html">Course Index</a></p>
 <p><em><a href="aman-bhargava.com">Aman Bhargava</a>, Fall 2024</em></p>
-<p>Using machines to learn predictive models turns out to be a bright
-idea. By using lots of data to infer parameters for the right class of
-model, you can solve a lot of problems.</p>
+<p>Using machines to learn predictive models turns out to work better
+for a lot of problems than trying to hand-derive or hand-calculate the
+solutions. By using lots of data to infer parameters for the right class
+of model, you can solve a lot of problems. Moreover, machine learning
+lets us get past some of the scaling issues associated with the
+<strong>combinatorial explosion</strong> we discussed before – where the
+number of
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>k</mi><annotation encoding="application/x-tex">k</annotation></semantics></math>-character
+sequences of lowercase English is
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msup><mn>26</mn><mi>k</mi></msup><annotation encoding="application/x-tex">26^k</annotation></semantics></math>.
+Assigning probabilities over such a large sample space is tough without
+a little help from some <strong>learning machines</strong>.</p>
+<p>In this chapter, we will grow your understanding of parameter
+estimation from <a href="ch01.html">Chapter 1</a> to include modern
+computational methods and concepts, from statistical learning to machine
+learning to deep learning. There are several key mathematical concepts
+that I also hope to unify in your mind:</p>
+<ol type="1">
+<li>Parameter estimation</li>
+<li>Learning algorithms</li>
+<li>Projection</li>
+<li>Function approximation</li>
+<li>Optimization</li>
+</ol>
+<p>After this chapter, you will be able to soup up your N-gram language
+model to use some fancier statistical learning and deep learning methods
+to factorize the combinatorially exploding sequence space and aggregate
+context over longer sequences with better accuracy. Since it’s a bit of
+a mouthfull to get through all of statistical learning, machine
+learning, deep learning, AND all the ways we’ve figured out to do
+sequence modelling, I’ll just focus on the first 3 and save the last one
+for <a href="ch03.html">Chapter 3</a></p>
+<h2 id="types-of-machine-learning-problems">2.1: Types of Machine
+Learning Problems</h2>
+<p><strong>Supervised learning</strong>:</p>
+<p><strong>Unsupervised learning</strong>:</p>
+<p><strong>Reinforcement learning</strong>:</p>
+<h2 id="linear-regression">2.2: Linear Regression</h2>
 <ul>
-<li>Supervised vs. unsupervised learning</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>𝐗</mi><mi>𝐰</mi><mo mathvariant="bold">=</mo><mi>𝐲</mi></mrow><annotation encoding="application/x-tex">\mathbf {Xw = y}</annotation></semantics></math></li>
+<li>Projection operation</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>ℓ</mo><mn>2</mn></msub><annotation encoding="application/x-tex">\ell_2</annotation></semantics></math>
+minimization
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mo>⇔</mo><annotation encoding="application/x-tex">\iff</annotation></semantics></math>
+projection</li>
+<li><math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>ℓ</mo><mn>2</mn></msub><annotation encoding="application/x-tex">\ell_2</annotation></semantics></math>
+still works for logistic, so does log likelihood.</li>
+<li>Gradient descent,
+LASSO/<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><msub><mo>ℓ</mo><mn>2</mn></msub><annotation encoding="application/x-tex">\ell_2</annotation></semantics></math>
+regularization as a prior distribution on
+<math display="inline" xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mi>𝐰</mi><annotation encoding="application/x-tex">\mathbf w</annotation></semantics></math>,</li>
+<li>Linear regression is pretty OP.</li>
 </ul>
-<h2 id="linear-and-logistic-regression">2.1: Linear and Logistic
-Regression</h2>
-<h2 id="likelihood-maximization-as-an-optimization">2.2: Likelihood
-Maximization as an Optimization</h2>
-<h2 id="loss-functions-and-gradient-descent">2.3: Loss Functions and
+<h2
+id="logistic-regression-likelihood-maximization-as-an-optimization">2.3:
+Logistic Regression Likelihood Maximization as an Optimization</h2>
+<h2 id="loss-functions-and-gradient-descent">2.4: Loss Functions and
 Gradient Descent</h2>
 <h3 id="learning-as-function-approximation">Learning as Function
 Approximation</h3>
 <h3 id="venturing-beyond-linearity">Venturing Beyond Linearity</h3>
 <h3 id="bias-variance-tradeoff">Bias-Variance Tradeoff</h3>
-<h2 id="neural-networks">2.4: Neural Networks</h2>
+<h2 id="neural-networks">2.5: Neural Networks</h2>
 <h3 id="chain-rule-of-calculus">Chain Rule of Calculus</h3>
 <h3 id="miracle-of-deep-learning">Miracle of Deep Learning</h3>
 <h3 id="the-bitter-lesson">The Bitter Lesson</h3>
