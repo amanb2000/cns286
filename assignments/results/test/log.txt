@@ -1,0 +1,5 @@
+[2024-10-22 17:53:27] Arguments: Namespace(data_file='path/to/data.txt', n=4, results_dir='results/test')
+[2024-10-22 17:54:12] === START OF TEST SCRIPT ===
+[2024-10-22 17:54:12] Arguments: Namespace(data_file='path/to/data.txt', n=4, results_dir='results/test')
+[2024-10-22 17:59:34] === START OF TEST SCRIPT ===
+[2024-10-22 17:59:34] Arguments: Namespace(data_file='data/pride_and_prejudice.txt', n=3, results_dir='results/test')
